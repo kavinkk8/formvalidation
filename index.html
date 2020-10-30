@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormValidation</title>
+</head>
+<link  rel="stylesheet" href="./style.css">
+<script src="./script.js"></script>
+<body>
+  <form id="myform">
+      <div id="main" align="center">
+        <h1 style="color: aliceblue;">Form Validation</h1>
+           <table style="background-color: aliceblue;">
+             <tr><td>Name:</td><td><input type="text" required></td></tr><td></td><td><label id="ner"></label></td><tr></tr>
+             <tr><td>Email:</td><td><input type="text" oninput="mail()" required></td></tr><td></td><td><label id="maer"></label></td><tr></tr><tr></tr>
+             <tr><td>Password:</td><td><input type="password" oninput="pas()" required></td></tr><tr><td></td><td><label id="p1er">password must contains *lowercase *uppercase *number *special character <label id="p2er"><label id="p3er"><label id="p4er"></label></td><tr></tr>
+             <tr><td>Confirm Password:</td><td><input type="password" oninput="cpas()" required></td></tr><tr><td></td><td><label id="cper"></label></td><tr></tr>
+             <tr><td>City:</td><td><input id="city" type="text" required></td></tr><tr><td></td><td><label id="cer"></label></td><tr></tr>
+             <tr><td>Address:</td><td><textarea id="add" rows="4" cols="22" required></textarea></td><td></td><td><label id="aer"></label></td><tr></tr>
+             <tr><td>Mobile No:</td><td><input id="mob" type="text" oninput="mo()" required></td></tr><td></td><td><label id="mer"></label></td><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+             <tr align="center"><td><button onclick="sub()">Submit</button></td><td><button onclick=location.reload();>Clear</button></td></td></tr>
+           </table>
+       </div>
+    </form>
+</body>
+</html>
